@@ -1,7 +1,4 @@
 /* Anabasi Design System - CSS Variables */
-body, h1, h2, h3, h4, h5, h6, p, a, li, span, div {
-    font-family: 'Montserrat', sans-serif !important;
-}
 :root {
 /* Base colors - inspired by Anabasi branding */
     --background: hsl(30, 5%, 96%); /* Light Beige (#F8F1E9) */
@@ -12,20 +9,20 @@ body, h1, h2, h3, h4, h5, h6, p, a, li, span, div {
     --card-foreground: hsl(10, 20%, 30%); /* Warm Brown (#6B4E4C) */
 
     /* Primary - Teal */
-    --primary: #4A9C9C; /* Teal (#4A9C9C) */
-    --primary-foreground: hsl(173, 55%, 61%); /* White (#FFFFFF) */
+    --primary: hsl(184, 38%, 40%); /* Teal (#4A9C9C) */
+    --primary-foreground: hsl(0, 0%, 100%); /* White (#FFFFFF) */
     --primary-rgb: 52, 152, 219;
 
     /* Secondary - Soft neutral */
-    --secondary: #4A9C9C; /* Beige (#F5EDE0) */
-    --secondary-foreground: #6B4E4C; /* Warm Brown (#6B4E4C) */
+    --secondary: hsl(30, 5%, 92%); /* Beige (#F5EDE0) */
+    --secondary-foreground: hsl(10, 20%, 30%); /* Warm Brown (#6B4E4C) */
 
     /* Muted tones */
-    --muted:  hsl(60, 17%, 95%); /* Light Gray (#EDEDED) */
-    --muted-foreground: hsl(120, 10%, 97%); /* Darker Gray (#666) */
+    --muted: hsl(0, 0%, 93%); /* Light Gray (#EDEDED) */
+    --muted-foreground: hsl(0, 0%, 40%); /* Darker Gray (#666) */
 
     /* Accent - Sage Green */
-    --accent: hsl(75, 17%, 23%); /* Sage Green (#8A9A5B) */
+    --accent: hsl(75, 25%, 40%); /* Sage Green (#8A9A5B) */
     --accent-foreground: hsl(0, 0%, 100%); /* White (#FFFFFF) */
 
     /* Anabasi wellness colors */
@@ -142,10 +139,6 @@ img {
     .container {
         padding: 0 var(--spacing-8);
     }
-}
-
-.shaved-chocolate {
-  color: hsl(13, 23%, 30%);
 }
 
 /* Header Styles */
@@ -358,17 +351,6 @@ img {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: #f5f0e7;
-}
-
-.Noimage-section {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    overflow: hidden;
-    background: #f5f0e7;
 }
 
 .hero-background {
@@ -385,7 +367,7 @@ img {
 .hero-overlay {
     position: absolute;
     inset: 0;
-
+    background-color: hsla(0, 0%, 0%, 0.3);
 }
 
 .hero-content {
@@ -432,12 +414,6 @@ img {
 .mission-section {
     padding: 40px 20px;
 }
-
-.Ourteam-section {
-    padding: 40px 20px;
-    background: var(--secondary-foreground);
-}
-
 .sinergie-section {
     display: flex;
     flex-direction: column;   /* stack title + paragraph */
@@ -523,7 +499,7 @@ img {
 }
 
 .team-section {
-    padding: var(--spacing-6) 0;
+    padding: var(--spacing-20) 0;
     background-color: var(--wellness-sage);
 }
 
@@ -539,11 +515,6 @@ img {
 
 .section-spacing {
     padding: var(--spacing-20) 0;
-}
-
-.integration-spacing {
-    padding: var(--spacing-20) 0;
-    background-color: var(--secondary-foreground);
 }
 
 .section-padding {
@@ -717,14 +688,14 @@ img {
 
 .section-header {
     text-align: center;
-    margin-bottom: var(--spacing-1);
+    margin-bottom: var(--spacing-16);
 }
 
 .circle {
   width: 50px;              /* size of the circle */
   height: 50px;
-  background-color: hsl(0, 4%, 79%); /* circle color */
-  color: rgb(95, 87, 74);              /* text color */
+  background-color: hsl(29, 19%, 73%); /* circle color */
+  color: white;              /* text color */
   border-radius: 50%;        /* makes it a circle */
   display: flex;             /* center the number */
   align-items: center;
@@ -738,13 +709,6 @@ img {
     font-weight: 600;
     text-decoration: underline;
     text-decoration-thickness: 2px;
-}
-
-.primary-text{
-    color: var(--primary);
-    font-weight: 600;
-    font-size: 28px;
-
 }
 
 .section-title {
@@ -762,7 +726,7 @@ img {
 .section-description {
     font-size: var(--text-lg);
     color: var(--muted-foreground);
-    max-width: 1000px;
+    max-width: 700px;
     margin: 0 auto;
     line-height: 1.8;
 }
@@ -870,7 +834,7 @@ img {
 }
 
 .card-icon-gold {
-    background-color: hsla(0, 0%, 89%, 0.1);
+    background-color: hsla(45, 70%, 50%, 0.1);
 }
 
 .card-icon-blue {
@@ -1012,7 +976,7 @@ img {
 /* Form styles */
 .contact-form-section {
     padding: var(--spacing-16) 0;
-    background: var(--secondary-foreground);
+    background: var(--wellness-beige);
 }
 
 .contact-form-grid {
@@ -1753,11 +1717,6 @@ html {
 
 .section-spacing {
     padding: var(--spacing-20) 0;
-}
-
-.Intervention-spacing {
-    padding: var(--spacing-20) 0;
-    background-color: var(--secocondary-foreground);
 }
 
 .section-padding {
