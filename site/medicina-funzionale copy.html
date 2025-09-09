@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicina Funzionale - Anabasi Lumenis</title>
+    <meta name="description" content="Omeopatia, Naturopatia e Nutrizione per il benessere integrale. Consulenze personalizzate dalla Dott.ssa Monica De Pasqual a Belluno.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"> <!-- Updated to 2.3.4 for stability -->
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Keep this, but check for conflicts -->
+    <style>
+        body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; background: #f7f7f7; }
+        .MainContainer { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .ParallaxContainer { height: 300px; background: #F1ECE3; display: flex; align-items: center; justify-content: center; }
+        .ContentContainer { padding: 40px 0; }
+        .Content { display: grid; gap: 20px; }
+        /* Ensure AOS can animate */
+        [data-aos] {
+            opacity: 0; /* Initial state for AOS */
+        }
+        /* Optional: Prevent external CSS from interfering */
+        .Content div { margin: 0; padding: 15px; background: #fff; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <header class="header-fixed">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">
+                    <img src="assets/images/logo.png" alt="Anabasi Logo">
+                </a>
+                <div class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="medicina-funzionale.html" class="nav-link active primary">Medicina Funzionale</a>
+                    <a href="ayurveda.html" class="nav-link">Ayurveda</a>
+                    <a href="yoga-meditazione.html" class="nav-link">Yoga e Meditazione</a>
+                    <a href="collaborazioni.html" class="nav-link">Collaborazioni</a>
+                    <a href="seminari.html" class="nav-link">Seminari</a>
+                    <a href="contatti.html" class="nav-link">Contatti</a>
+                </div>
+                <button class="nav-mobile-toggle" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+            <div class="nav-mobile">
+                <div class="nav-mobile-content">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="medicina-funzionale.html" class="nav-link">Medicina Funzionale</a>
+                    <a href="ayurveda.html" class="nav-link">Ayurveda</a>
+                    <a href="yoga-meditazione.html" class="nav-link">Yoga e Meditazione</a>
+                    <a href="collaborazioni.html" class="nav-link">Collaborazioni</a>
+                    <a href="seminari.html" class="nav-link primary">Seminari</a>
+                    <a href="contatti.html" class="nav-link">Contatti</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="MainContainer">
+            <div class="ParallaxContainer">
+                <h1 style="color: #F1ECE3;">Medicina Funzionale</h1>
+            </div>
+            <div class="ContentContainer">
+                <div class="Content">
+                    <div data-aos="fade-up-right" data-aos-delay="100" data-aos-duration="800">
+                        ʻO Lorem Ipsum kahi haʻahaʻa wale nō o ka paʻi a me keʻano o nāʻoihana...
+                    </div>
+                    <div data-aos="fade-up-left" data-aos-delay="200" data-aos-duration="800">
+                        ʻO Lorem Ipsum kahi haʻahaʻa wale nō o ka paʻi a me keʻano o nāʻoihana...
+                    </div>
+                    <div data-aos="fade-up-right" data-aos-delay="300" data-aos-duration="800">
+                        ʻO Lorem Ipsum kahi haʻahaʻa wale nō o ka paʻi a me keʻano o nāʻoihana...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script> <!-- Updated to 2.3.4 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('AOS initializing...');
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 100,
+                easing: 'ease-in-out'
+            });
+            console.log('AOS initialized');
+        });
+    </script>
+</body>
+</html>
